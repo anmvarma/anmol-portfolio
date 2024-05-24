@@ -1,8 +1,8 @@
 /* Base Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f3f2f1;
-    color: #323130;
+    background-color: #1e1e1e;
+    color: #e1e1e1;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,9 +16,9 @@ body {
 
 /* Header */
 header {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(30, 30, 30, 0.9);
     backdrop-filter: blur(10px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
     position: fixed;
     width: 100%;
     top: 0;
@@ -35,7 +35,7 @@ header .container {
 header .logo {
     font-size: 1.5em;
     font-weight: 600;
-    color: #0078d4;
+    color: #00aaff;
 }
 
 header nav ul {
@@ -51,18 +51,18 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    color: #323130;
+    color: #e1e1e1;
     font-weight: 600;
     transition: color 0.3s;
 }
 
 header nav ul li a:hover {
-    color: #0078d4;
+    color: #00aaff;
 }
 
 /* Hero Section */
 .hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
+    background: url('hero-bg-dark.jpg') no-repeat center center/cover;
     color: #fff;
     padding: 100px 0;
     text-align: center;
@@ -85,8 +85,8 @@ header nav ul li a:hover {
 }
 
 .hero .cta-button {
-    background: #0078d4;
-    color: #fff;
+    background: #00aaff;
+    color: #1e1e1e;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -95,7 +95,7 @@ header nav ul li a:hover {
 }
 
 .hero .cta-button:hover {
-    background: #005a9e;
+    background: #0088cc;
 }
 
 /* Section Styles */
@@ -105,7 +105,7 @@ section {
 }
 
 section h2 {
-    color: #0078d4;
+    color: #00aaff;
     margin-bottom: 40px;
 }
 
@@ -124,9 +124,9 @@ section h2 {
 }
 
 .projects .project-card {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(40, 40, 40, 0.9);
     backdrop-filter: blur(10px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     padding: 20px;
     flex: 1 1 calc(33.333% - 40px);
@@ -156,9 +156,9 @@ section h2 {
 }
 
 .certifications ul li, .patents ul li {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(40, 40, 40, 0.9);
     backdrop-filter: blur(10px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
@@ -184,13 +184,15 @@ section h2 {
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #444;
     font-size: 1em;
+    background: #2e2e2e;
+    color: #e1e1e1;
 }
 
 .contact form button {
-    background: #0078d4;
-    color: #fff;
+    background: #00aaff;
+    color: #1e1e1e;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -200,15 +202,15 @@ section h2 {
 }
 
 .contact form button:hover {
-    background: #005a9e;
+    background: #0088cc;
 }
 
 /* Footer */
 footer {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(30, 30, 30, 0.9);
     backdrop-filter: blur(10px);
     padding: 20px 0;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.7);
 }
 
 footer .container {
@@ -230,11 +232,11 @@ footer nav ul li {
 
 footer nav ul li a {
     text-decoration: none;
-    color: #323130;
+    color: #e1e1e1;
     font-weight: 600;
     transition: color 0.3s;
 }
 
 footer nav ul li a:hover {
-    color: #0078d4;
+    color: #00aaff;
 }
