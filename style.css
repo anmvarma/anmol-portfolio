@@ -5,190 +5,236 @@ body {
     color: #323130;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
 header {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    padding: 10px 0;
 }
 
-.logo {
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
     font-size: 1.5em;
     font-weight: 600;
     color: #0078d4;
 }
 
-nav ul {
+header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-nav ul li {
+header nav ul li {
     margin-left: 20px;
 }
 
-nav ul li a {
+header nav ul li a {
     text-decoration: none;
     color: #323130;
     font-weight: 600;
+    transition: color 0.3s;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
     color: #0078d4;
 }
 
-main {
-    padding-top: 60px; /* Adjusted to avoid header overlap */
+/* Hero Section */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
 }
 
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .cta-button {
+    background: #0078d4;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.hero .cta-button:hover {
+    background: #005a9e;
+}
+
+/* Section Styles */
 section {
-    padding: 60px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-section h1, section h2, section h3 {
-    color: #0078d4;
+    padding: 60px 0;
     text-align: center;
 }
 
 section h2 {
-    margin-top: 40px;
+    color: #0078d4;
+    margin-bottom: 40px;
 }
 
-section p, section ul {
-    margin-top: 10px;
+/* About Section */
+.about p {
     line-height: 1.6;
+    margin: 0 0 20px;
 }
 
-/* Glass Effect */
-.glass {
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-/* Cards */
-.cards {
+/* Projects Section */
+.projects .project-cards {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
 
-.card {
-    background: rgba(255, 255, 255, 0.8);
+.projects .project-card {
+    background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 20px;
     flex: 1 1 calc(33.333% - 40px);
     box-sizing: border-box;
+    transition: transform 0.3s;
 }
 
-.card h3 {
+.projects .project-card:hover {
+    transform: translateY(-10px);
+}
+
+.projects .project-card h3 {
     margin-top: 0;
 }
 
-.card ul {
-    padding-left: 20px;
+.projects .project-card p {
+    line-height: 1.6;
+}
+
+/* Certifications and Patents Section */
+.certifications ul, .patents ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.certifications ul li, .patents ul li {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact form label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.contact form button {
+    background: #0078d4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact form button:hover {
+    background: #005a9e;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 10px 0;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
+    padding: 20px 0;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
-footer p {
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer nav ul {
+    display: flex;
+    list-style: none;
     margin: 0;
+    padding: 0;
 }
 
-/* Carousel */
-.slick-slide {
-    margin: 0 10px;
+footer nav ul li {
+    margin-left: 20px;
 }
 
-.slick-prev, .slick-next {
-    background: #0078d4;
-    border-radius: 50%;
-    color: #fff;
-    padding: 10px;
-    z-index: 1001;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
+footer nav ul li a {
+    text-decoration: none;
+    color: #323130;
+    font-weight: 600;
+    transition: color 0.3s;
 }
 
-.slick-prev {
-    left: -25px;
-}
-
-.slick-next {
-    right: -25px;
-}
-
-.slick-prev:hover, .slick-next:hover {
-    background: #005a9e;
-}
-
-.slick-dots li button:before {
+footer nav ul li a:hover {
     color: #0078d4;
-}
-
-.slick-dots li.slick-active button:before {
-    color: #005a9e;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-    }
-    
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    nav ul li {
-        margin: 10px 0;
-    }
-    
-    section {
-        padding: 40px 20px;
-    }
-    
-    .card {
-        flex: 1 1 100%;
-    }
-
-    .slick-prev {
-        left: -15px;
-    }
-
-    .slick-next {
-        right: -15px;
-    }
 }
