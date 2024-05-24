@@ -1,7 +1,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f3f3f3;
-    color: #333;
+    background-color: #f3f2f1;
+    color: #323130;
     margin: 0;
     padding: 0;
 }
@@ -22,6 +22,7 @@ header {
 .logo {
     font-size: 1.5em;
     font-weight: 600;
+    color: #0078d4;
 }
 
 nav ul {
@@ -37,7 +38,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #323130;
     font-weight: 600;
 }
 
@@ -47,7 +48,7 @@ nav ul li a:hover {
 
 section {
     padding: 60px 20px 20px 20px;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     margin-top: 80px;
 }
@@ -66,7 +67,7 @@ section p, section ul {
 }
 
 .glass {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
