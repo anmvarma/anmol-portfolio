@@ -56,6 +56,7 @@ section {
 
 section h1, section h2, section h3 {
     color: #0078d4;
+    text-align: center;
 }
 
 section h2 {
@@ -69,12 +70,38 @@ section p, section ul {
 
 /* Glass Effect */
 .glass {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card ul {
+    padding-left: 20px;
 }
 
 /* Forms */
@@ -126,57 +153,6 @@ footer p {
     margin: 0;
 }
 
-/* Specific Section Styling */
-#home {
-    background-image: url('https://example.com/your-background-image.jpg'); /* Replace with your image URL */
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-
-#home p {
-    background: rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-#resume, #portfolio, #contact {
-    background: #ffffff;
-}
-
-h1, h2, h3 {
-    text-align: center;
-}
-
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-h3 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-}
-
-/* Links */
-a {
-    color: #0078d4;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     header {
@@ -195,5 +171,9 @@ a:hover {
     section {
         padding: 40px 20px;
         margin-top: 100px;
+    }
+    
+    .card {
+        flex: 1 1 100%;
     }
 }
